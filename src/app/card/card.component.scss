@@ -1,0 +1,39 @@
+.content{
+    width: 80%; 
+    height:auto;
+    padding: 16px;
+    margin-left: 10em;
+    display: inline-block;
+}
+:host ::ng-deep.mat-paginator .mat-paginator-container{
+    justify-content: flex-start;
+  }
+.card-content{
+    display: inline-block;
+    width: 17em; 
+    margin-right:2em;
+    margin-left: auto;  
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+    .card-content {
+     width: 200px;
+     height: 300px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .card-content{
+     height: auto;
+      width: 20em;
+      margin: auto;
+    }
+    .content{
+        padding: auto;
+        width: 80%;
+        margin-left: 5rem;
+        margin-right: auto;
+    }
+
+}

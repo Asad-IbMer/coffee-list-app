@@ -1,0 +1,15 @@
+<div class="content">  
+    
+<mat-card class="card-content" *ngFor="let coffee of (coffees)  | paginate: { itemsPerPage: 10, currentPage: page }"> 
+    <mat-card-title>{{coffee.blend_name}}</mat-card-title>
+    <mat-card-subtitle>id: {{coffee.id}}</mat-card-subtitle>
+    <mat-card-subtitle>uid: {{coffee.uid}}</mat-card-subtitle>
+    <mat-card-content>Origin: {{coffee.origin}}</mat-card-content>
+    <mat-card-content>Notes: {{coffee.notes}} </mat-card-content>
+    <mat-card-content>variety: {{coffee.variety}} </mat-card-content>
+  </mat-card>
+</div>
+<pagination-controls class=".pagination" (pageChange)="page = $event"></pagination-controls>
+  
+ 
+  ` 
